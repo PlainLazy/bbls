@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>BubbleGameAdmin</title>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/ext-all.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/classic/theme-neptune/theme-neptune.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/classic/theme-neptune/resources/theme-neptune-all_1.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/classic/theme-neptune/resources/theme-neptune-all_2.css">
+    
+    <script>
+        
+        loaded = () => {
+            console.log('index.loaded')
+            
+            Ext.Loader.loadScript([
+                'ApiReq.js',
+                'App.js',
+                'Login.js',
+                'Dashboard.js',
+            ])
+            
+        }
+        
+    </script>
+    <script src="Login.js"></script>
+
+</head>
+<body onload="loaded()"></body>
+</html>

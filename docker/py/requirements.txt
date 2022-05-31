@@ -1,0 +1,3 @@
+Momoko
+psycopg2-binary
+tornado
